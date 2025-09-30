@@ -14,18 +14,16 @@ namespace Flappy_bird
         private System.Windows.Forms.Label scoreLabel;
         private System.Windows.Forms.Timer gameTimer;
 
-        // Oyun bitti popup panel ve label
+
         private Panel gameOverPanel;
         private Label gameOverLabel;
-
-        // 3 çift pipe için PictureBox referanslarý
         private PictureBox[] pipeTops;
         private PictureBox[] pipeBottoms;
         private int pipeCount = 3;
         private int pipeGap = 150;
         private int pipeDistance = 250;
 
-        private bool isGameOver = false; // Sýnýf deðiþkenlerine ekleyin
+        private bool isGameOver = false;
 
         public Form1()
         {
@@ -35,8 +33,6 @@ namespace Flappy_bird
 
             this.DoubleBuffered = true;
             this.BackgroundImageLayout = ImageLayout.Stretch;
-
-            // scoreLabel
             this.scoreLabel = new System.Windows.Forms.Label();
             this.scoreLabel.Name = "scoreLabel";
             this.scoreLabel.Text = "Skor: 0";
@@ -44,10 +40,8 @@ namespace Flappy_bird
             this.scoreLabel.Location = new System.Drawing.Point(10, 10);
             this.scoreLabel.BackColor = Color.Transparent;
             this.Controls.Add(this.scoreLabel);
-
-            // Oyun bitti paneli ve label'ý
             this.gameOverPanel = new Panel();
-            this.gameOverPanel.Size = new Size(300, 160); // Yüksekliði 160 yapýldý
+            this.gameOverPanel.Size = new Size(300, 160); 
             this.gameOverPanel.BackColor = Color.FromArgb(220, 30, 30, 30);
             this.gameOverPanel.Location = new Point((this.ClientSize.Width - 300) / 2, (this.ClientSize.Height - 160) / 2);
             this.gameOverPanel.Visible = false;
@@ -55,25 +49,22 @@ namespace Flappy_bird
 
             this.gameOverLabel = new Label();
             this.gameOverLabel.AutoSize = false;
-            this.gameOverLabel.Size = new Size(280, 60); // Yüksekliði 60 yapýldý
+            this.gameOverLabel.Size = new Size(280, 60);
             this.gameOverLabel.Location = new Point(10, 10);
             this.gameOverLabel.TextAlign = ContentAlignment.MiddleCenter;
             this.gameOverLabel.Font = new Font("Arial", 16, FontStyle.Bold);
             this.gameOverLabel.ForeColor = Color.White;
             this.gameOverPanel.Controls.Add(this.gameOverLabel);
 
-            // Restart butonu
             Button restartButton = new Button();
             restartButton.Text = "Yeniden Baþlat";
             restartButton.Size = new Size(180, 35);
-            restartButton.Location = new Point(60, 80); // Y ekseni 80'e çekildi
             restartButton.Font = new Font("Arial", 12, FontStyle.Bold);
             restartButton.Click += RestartButton_Click;
             gameOverPanel.Controls.Add(restartButton);
 
             this.Controls.Add(this.gameOverPanel);
 
-            // 3 çift pipe oluþtur
             pipeTops = new PictureBox[pipeCount];
             pipeBottoms = new PictureBox[pipeCount];
             for (int i = 0; i < pipeCount; i++)
@@ -96,13 +87,11 @@ namespace Flappy_bird
                 this.Controls.Add(pipeBottoms[i]);
             }
 
-            // Ýlk konumlandýrma
             for (int i = 0; i < pipeCount; i++)
             {
                 SetPipePair(pipeTops[i], pipeBottoms[i]);
             }
 
-            // gameTimer
             this.gameTimer = new System.Windows.Forms.Timer();
             this.gameTimer.Tick += new System.EventHandler(this.gameTimer_Tick);
             this.gameTimer.Interval = 25;
@@ -111,7 +100,7 @@ namespace Flappy_bird
 
         private void gameTimer_Tick(object sender, EventArgs e)
         {
-            if (!isGameOver) // Oyun bitmediyse devam et
+            if (!isGameOver) 
             {
                 bird1.Top += gravity;
 
@@ -151,8 +140,6 @@ namespace Flappy_bird
                 score++;
             }
         }
-
-        // Pipe çiftini kurallara uygun þekilde konumlandýrýr
         private void SetPipePair(PictureBox topPipe, PictureBox bottomPipe)
         {
             int minTopHeight = 50;
@@ -166,7 +153,6 @@ namespace Flappy_bird
             bottomPipe.Height = this.ClientSize.Height - (pipeTopHeight + pipeGap);
         }
 
-        // GameOver metodunu güncelleyin
         private void GameOver()
         {
             gameTimer.Stop();
@@ -181,7 +167,6 @@ namespace Flappy_bird
             RestartGame();
         }
 
-        // RestartGame metodunu güncelleyin
         private void RestartGame()
         {
             score = 0;
@@ -202,8 +187,8 @@ namespace Flappy_bird
             isGameOver = false;
             gameTimer.Start();
 
-            this.ActiveControl = null; // ODAK hiçbir kontrolde olmasýn
-            this.Focus();              // Form'a odaklan
+            this.ActiveControl = null; 
+            this.Focus();              
         }
 
         private void Form1_KeyDown(object sender, KeyEventArgs e)
@@ -214,7 +199,6 @@ namespace Flappy_bird
             }
         }
 
-        // Form1_KeyUp metodunu güncelleyin
         private void Form1_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Space && !isGameOver)

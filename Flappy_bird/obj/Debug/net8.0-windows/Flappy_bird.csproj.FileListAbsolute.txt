@@ -32,3 +32,21 @@ C:\Users\baray\Desktop\ntp_lesson\Flappy_bird - Kopya (2)\Flappy_bird\obj\Debug\
 C:\Users\baray\Desktop\ntp_lesson\Flappy_bird - Kopya (2)\Flappy_bird\obj\Debug\net8.0-windows\Flappy_bird.pdb
 C:\Users\baray\Desktop\ntp_lesson\Flappy_bird - Kopya (2)\Flappy_bird\obj\Debug\net8.0-windows\Flappy_bird.genruntimeconfig.cache
 C:\Users\baray\Desktop\ntp_lesson\Flappy_bird - Kopya (2)\Flappy_bird\obj\Debug\net8.0-windows\ref\Flappy_bird.dll
+C:\Users\baray\Desktop\ntp_lesson\Flappy_Bird_Güncel\Flappy_bird\bin\Debug\net8.0-windows\Flappy_bird.exe
+C:\Users\baray\Desktop\ntp_lesson\Flappy_Bird_Güncel\Flappy_bird\bin\Debug\net8.0-windows\Flappy_bird.deps.json
+C:\Users\baray\Desktop\ntp_lesson\Flappy_Bird_Güncel\Flappy_bird\bin\Debug\net8.0-windows\Flappy_bird.runtimeconfig.json
+C:\Users\baray\Desktop\ntp_lesson\Flappy_Bird_Güncel\Flappy_bird\bin\Debug\net8.0-windows\Flappy_bird.dll
+C:\Users\baray\Desktop\ntp_lesson\Flappy_Bird_Güncel\Flappy_bird\bin\Debug\net8.0-windows\Flappy_bird.pdb
+C:\Users\baray\Desktop\ntp_lesson\Flappy_Bird_Güncel\Flappy_bird\obj\Debug\net8.0-windows\Flappy_bird.Form1.resources
+C:\Users\baray\Desktop\ntp_lesson\Flappy_Bird_Güncel\Flappy_bird\obj\Debug\net8.0-windows\Flappy_bird.Properties.Resources.resources
+C:\Users\baray\Desktop\ntp_lesson\Flappy_Bird_Güncel\Flappy_bird\obj\Debug\net8.0-windows\Flappy_bird.csproj.GenerateResource.cache
+C:\Users\baray\Desktop\ntp_lesson\Flappy_Bird_Güncel\Flappy_bird\obj\Debug\net8.0-windows\Flappy_bird.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\baray\Desktop\ntp_lesson\Flappy_Bird_Güncel\Flappy_bird\obj\Debug\net8.0-windows\Flappy_bird.AssemblyInfoInputs.cache
+C:\Users\baray\Desktop\ntp_lesson\Flappy_Bird_Güncel\Flappy_bird\obj\Debug\net8.0-windows\Flappy_bird.AssemblyInfo.cs
+C:\Users\baray\Desktop\ntp_lesson\Flappy_Bird_Güncel\Flappy_bird\obj\Debug\net8.0-windows\Flappy_bird.csproj.CoreCompileInputs.cache
+C:\Users\baray\Desktop\ntp_lesson\Flappy_Bird_Güncel\Flappy_bird\obj\Debug\net8.0-windows\Flappy_bird.sourcelink.json
+C:\Users\baray\Desktop\ntp_lesson\Flappy_Bird_Güncel\Flappy_bird\obj\Debug\net8.0-windows\Flappy_bird.dll
+C:\Users\baray\Desktop\ntp_lesson\Flappy_Bird_Güncel\Flappy_bird\obj\Debug\net8.0-windows\refint\Flappy_bird.dll
+C:\Users\baray\Desktop\ntp_lesson\Flappy_Bird_Güncel\Flappy_bird\obj\Debug\net8.0-windows\Flappy_bird.pdb
+C:\Users\baray\Desktop\ntp_lesson\Flappy_Bird_Güncel\Flappy_bird\obj\Debug\net8.0-windows\Flappy_bird.genruntimeconfig.cache
+C:\Users\baray\Desktop\ntp_lesson\Flappy_Bird_Güncel\Flappy_bird\obj\Debug\net8.0-windows\ref\Flappy_bird.dll
