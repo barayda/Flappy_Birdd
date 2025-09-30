@@ -1,4 +1,4 @@
-# Flappy Bird Clone
+# Flappy Bird Game
 
 Bu proje, klasik Flappy Bird oyunundan esinlenerek C# ile geliştirilmiş basit bir oyundur.  
 Amacı, kullanıcının kuşu boruların arasından geçirerek en yüksek puanı elde etmesini sağlamaktır.  
